@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Réservation en ligne - Hesso Coiffure</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Réservation en ligne, salon de coiffure Fribourg" name="keywords">
+        <meta content="Prenez rendez-vous en ligne avec Hesso Coiffure à Fribourg" name="description">
+        <!-- Content Security Policy -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://stackpath.bootstrapcdn.com; connect-src 'self' http://localhost:8000; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:;">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <div class="top-bar d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="top-bar-left">
+                            <div class="text">
+                                <h2>8:30 - 19:00</h2>
+                                <p>Lun-Jeu | Ven jusqu'à 20h</p>
+                            </div>
+                            <div class="text">
+                                <h2>Sam: 8:30 - 16:00</h2>
+                                <p>Dimanche fermé</p>
+                            </div>
+                            <div class="text">
+                                <h2>+41 26 322 45 67</h2>
+                                <p>Appelez pour rendez-vous</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="top-bar-right">
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Hesso <span>Coiffure</span></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link">Accueil</a>
+                        <a href="about.html" class="nav-item nav-link">À propos</a>
+                        <a href="price.html" class="nav-item nav-link">Tarifs</a>
+                        <a href="booking.html" class="nav-item nav-link active">Prendre Rendez-vous en ligne</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Réservation en ligne</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="index.html">Accueil</a>
+                        <a href="booking.html">Réservation en ligne</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- Booking Info Start -->
+        <div class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-img">
+                            <img src="img/about.jpg" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="section-header text-left">
+                            <p>Réservez facilement</p>
+                            <h2>Notre système de réservation en ligne</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                Nous sommes ravis de vous présenter notre nouveau système de réservation en ligne. Désormais, vous pouvez prendre rendez-vous 24h/24 et 7j/7 selon vos disponibilités, sans attendre les heures d'ouverture du salon.
+                            </p>
+                            <p>
+                                <strong>Les avantages de notre système de réservation :</strong>
+                            </p>
+                            <ul>
+                                <li>Réservation immédiate sans attente</li>
+                                <li>Rappel par SMS 30 minutes ou 1 heure avant votre rendez-vous</li>
+                                <li>Possibilité d'annuler ou de modifier votre rendez-vous en ligne</li>
+                                <li>Visualisation des créneaux disponibles en temps réel</li>
+                                <li>Historique de vos rendez-vous précédents</li>
+                            </ul>
+                            <p>
+                                Prenez rendez-vous dès maintenant et profitez d'une expérience client optimisée !
+                            </p>
+                            <a href="#booking-frame" class="btn">Réserver maintenant</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking Info End -->
+
+        <!-- Booking Frame Start -->
+        <div class="service" id="booking-frame">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Prenez rendez-vous facilement</p>
+                    <h2>Réservation rapide</h2>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="service-item text-center p-5">
+                            <h3 class="mb-4">Réservation en ligne simplifiée</h3>
+                            <p class="mb-4">
+                                Remplissez simplement ce formulaire avec vos coordonnées pour prendre rendez-vous rapidement.
+                            </p>
+                            
+                            <!-- Simple Booking Form -->
+                            <form id="bookingForm" class="booking-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="bookingName" placeholder="Votre nom" required>
+                                    <span class="error-message text-danger small" id="bookingName-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="bookingEmail" placeholder="Votre email" required>
+                                    <span class="error-message text-danger small" id="bookingEmail-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" id="bookingPhone" placeholder="Votre numéro de téléphone (ex: +41791234567)" required>
+                                    <span class="error-message text-danger small" id="bookingPhone-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="bookingService" required>
+                                        <option value="" disabled selected>Service souhaité</option>
+                                        
+                                        <!-- HOMMES -->
+                                        <optgroup label="HOMMES">
+                                            <option value="coupe-homme">Coupe (29.-)</option>
+                                            <option value="lavage-coupe">Lavage + coupe (32.-)</option>
+                                            <option value="coupe-barbe">Coupe + barbe (43.-)</option>
+                                            <option value="barbe-moustache">Barbe ou moustache (20.-)</option>
+                                            <option value="avs">AVS (25.-)</option>
+                                            <option value="epilation-sourcils">Epilation des sourcils au fil (18.-)</option>
+                                            <option value="dessins-cheveux">Dessins sur cheveux (à partir de 10.-)</option>
+                                        </optgroup>
+                                        
+                                        <!-- ENFANTS -->
+                                        <optgroup label="ENFANTS">
+                                            <option value="coupe-garcon-12ans">Coupe garçon jusqu'à 12 ans (20.-)</option>
+                                            <option value="coupe-garcon-degrade">Coupe garçon dégradé à zéro (28.-)</option>
+                                            <option value="coupe-garcon-tipper">Coupe garçon Tipper feed (28.-)</option>
+                                        </optgroup>
+                                    </select>
+                                    <span class="error-message text-danger small" id="bookingService-error"></span>
+                                </div>
+                                
+                                <!-- Sélection de la date -->
+                                <div class="form-group mt-4">
+                                    <label for="bookingDate">Date souhaitée</label>
+                                    <input type="date" class="form-control" id="bookingDate" required>
+                                    <span class="error-message text-danger small" id="bookingDate-error"></span>
+                                </div>
+                                
+                                <!-- Sélection de l'heure -->
+                                <div class="form-group">
+                                    <label for="bookingTime">Choisissez un créneau horaire</label>
+                                    <select class="form-control" id="bookingTime" required disabled>
+                                        <option value="" disabled selected>Sélectionnez d'abord une date</option>
+                                    </select>
+                                    <span class="error-message text-danger small" id="bookingTime-error"></span>
+                                </div>
+
+                                <div class="form-group mt-4">
+                                    <button type="submit" class="btn btn-booking btn-block">Réserver maintenant</button>
+                                </div>
+                            </form>
+
+                             <div id="bookingSuccess" style="display: none;" class="alert alert-success mt-3">
+                                <h4>Réservation en cours...</h4>
+                                <p>Vos informations ont été enregistrées. Nous vous contacterons rapidement pour confirmer votre rendez-vous.</p>
+                            </div>
+                            <div id="bookingStatus" style="display: none;" class="alert mt-3"></div>
+
+                            <p class="mt-4">
+                                <strong>Vous recevrez une confirmation par email et un rappel par SMS avant votre rendez-vous.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking Frame End -->
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-contact">
+                                    <h2>Adresse du salon</h2>
+                                    <p><i class="fa fa-map-marker-alt"></i>Rue Saint-Pierre 12, 1700 Fribourg, Suisse</p>
+                                    <p><i class="fa fa-phone-alt"></i>+41 26 322 45 67</p>
+                                    <p><i class="fa fa-envelope"></i>info@hesso-coiffure.ch</p>
+                                    <div class="footer-social">
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer-link">
+                                    <h2>Liens rapides</h2>
+                                    <a href="">Conditions d'utilisation</a>
+                                    <a href="">Politique de confidentialité</a>
+                                    <a href="">Cookies</a>
+                                    <a href="">Aide</a>
+                                    <a href="">FAQ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="footer-newsletter">
+                            <h2>Newsletter</h2>
+                            <p>
+                                Abonnez-vous à notre newsletter pour recevoir nos dernières offres et actualités.
+                            </p>
+                            <div class="form">
+                                <input class="form-control" placeholder="Votre email">
+                                <button class="btn">S'abonner</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Référence au formulaire de réservation
+                const bookingForm = document.getElementById('bookingForm');
+                const bookingStatusDiv = document.getElementById('bookingStatus'); // Changed ID from bookingSuccess
+
+                const nameInput = document.getElementById('bookingName');
+                const emailInput = document.getElementById('bookingEmail');
+                const phoneInput = document.getElementById('bookingPhone');
+                const serviceInput = document.getElementById('bookingService');
+
+                // Références aux champs de date et d'heure
+                const dateInput = document.getElementById('bookingDate');
+                const timeSelect = document.getElementById('bookingTime');
+
+                // Définir la date minimale à aujourd'hui
+                const today = new Date();
+                const dd = String(today.getDate()).padStart(2, '0');
+                const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                const yy = today.getFullYear();
+                dateInput.min = yy + '-' + mm + '-' + dd;
+
+                // Écouteur d'événement sur le changement de date
+                dateInput.addEventListener('change', function() {
+                    // Vérifier que la date n'est pas passée
+                    const selectedDate = new Date(this.value);
+                    selectedDate.setHours(0, 0, 0, 0); // Réinitialiser l'heure
+                    const todayNoTime = new Date();
+                    todayNoTime.setHours(0, 0, 0, 0); // Réinitialiser l'heure
+                    
+                    if (selectedDate < todayNoTime) {
+                        alert('Vous ne pouvez pas réserver une date passée. Veuillez choisir une date à partir d\'aujourd\'hui.');
+                        this.value = '';
+                        timeSelect.innerHTML = '<option value="" disabled selected>Sélectionnez d\'abord une date</option>';
+                        timeSelect.disabled = true;
+                        return;
+                    }
+                    clearAllFormErrors();
+                    fetchAvailableTimeSlots(dateInput.value);
+                });
+
+
+                // Fonction pour récupérer les créneaux horaires disponibles
+                function fetchAvailableTimeSlots(date) {
+                    // URL de l'API
+                    const apiUrl = `http://localhost:8000/api/v1/availability?start_date=${date}&end_date=${date}&service_duration_minutes=30`;
+                    // Afficher message de chargement
+                    timeSelect.innerHTML = '<option value="" disabled selected>Chargement des créneaux...</option>';
+                    timeSelect.disabled = true;
+                    // Tentative de récupération des créneaux disponibles via notre API
+                    fetch(apiUrl)
+                        .then(response => {
+                            if (!response.ok) {
+                                return response.json().then(errData => {
+                                    throw new Error(`Erreur HTTP ${response.status}: ${errData.detail || errData.message || 'Erreur serveur'}`);
+                                }).catch(() => { throw new Error(`Erreur HTTP ${response.status}`); });
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            let processedSlots = [];
+                            if (data.availability_schedule && Array.isArray(data.availability_schedule) && data.availability_schedule.length > 0) {
+                                const scheduleForDate = data.availability_schedule[0];
+                                if (scheduleForDate && scheduleForDate.date === date && scheduleForDate.slots && Array.isArray(scheduleForDate.slots)) {
+                                    // The backend now sends start_time_local and start_time_utc
+                                    processedSlots = scheduleForDate.slots.map(slot => {
+                                        return {
+                                            utc: slot.start_time_utc,       // For precise comparisons (e.g., filtering past)
+                                            local: slot.start_time_local,   // For display and form value (Europe/Zurich time)
+                                        };
+                                    });
+                                }
+                            }
+                            if (processedSlots.length === 0 && data.message) {
+                                 updateTimeSelector([], data.message);
+                            } else {
+                                updateTimeSelector(processedSlots);
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Erreur fetchAvailableTimeSlots:', error);
+                            updateTimeSelector([], `Erreur: ${error.message.substring(0,60)}`);
+                        });
+                }
+
+                function updateTimeSelector(slots, messageIfEmpty = 'Pas de créneaux disponibles (heure de Zurich)') {
+                    timeSelect.innerHTML = '';
+                    if (slots.length === 0) {
+                        timeSelect.innerHTML = `<option disabled selected>${messageIfEmpty}</option>`;
+                        timeSelect.disabled = true; return;
+                    }
+
+                    const selectedDateVal = dateInput.value;
+                    const todayDateStr = new Date().toISOString().split('T')[0]; // Today's date in YYYY-MM-DD UTC
+                    let displaySlots = slots;
+
+                    if (selectedDateVal === todayDateStr) {
+                        const now = new Date(); // Current moment in user's local time
+                        const T15MINS_IN_MS = 15 * 60 * 1000;
+
+                        displaySlots = slots.filter(slot => {
+                            const slotUtcDate = new Date(slot.utc); // Create Date obj from UTC string from API
+                            // Compare slot's UTC time with current time + buffer
+                            return slotUtcDate.getTime() > now.getTime() + T15MINS_IN_MS;
+                        });
+                        if (displaySlots.length === 0) {
+                             timeSelect.innerHTML = '<option disabled selected>Plus de créneaux aujourd\'hui (heure de Zurich)</option>';
+                             timeSelect.disabled = true; return;
+                        }
+                    }
+
+                    const defaultOption = document.createElement('option');
+                    defaultOption.value = ''; defaultOption.disabled = true; defaultOption.selected = true;
+                    defaultOption.textContent = 'Choisissez un horaire (heure de Zurich)';
+                    timeSelect.appendChild(defaultOption);
+
+                    displaySlots.forEach(slot => {
+                        const option = document.createElement('option');
+                        option.value = slot.local; // Use the Europe/Zurich local time string as the value
+                        option.textContent = slot.local; // Display the Europe/Zurich local time string
+                        timeSelect.appendChild(option);
+                    });
+                    timeSelect.disabled = false;
+                }
+
+                function displayErrorForField(fieldId, message) {
+                    const errorElement = document.getElementById(fieldId + '-error');
+                    const fieldElement = document.getElementById(fieldId);
+                    if (errorElement) {
+                        errorElement.textContent = message;
+                        errorElement.style.display = 'block';
+                    }
+                    if (fieldElement) fieldElement.classList.add('is-invalid');
+                }
+
+                function clearErrorForField(fieldId) {
+                    const errorElement = document.getElementById(fieldId + '-error');
+                    const fieldElement = document.getElementById(fieldId);
+                    if (errorElement) {
+                        errorElement.textContent = '';
+                        errorElement.style.display = 'none';
+                    }
+                    if (fieldElement) fieldElement.classList.remove('is-invalid');
+                }
+
+                function clearAllFormErrors() {
+                    ['bookingName', 'bookingEmail', 'bookingPhone', 'bookingService', 'bookingDate', 'bookingTime'].forEach(id => {
+                        clearErrorForField(id);
+                    });
+                    if (bookingStatusDiv.classList.contains('alert-danger') || bookingStatusDiv.classList.contains('alert-warning')) {
+                        bookingStatusDiv.style.display = 'none';
+                        bookingStatusDiv.className = 'alert mt-3'; // Reset class
+                    }
+                }
+
+                function validateEmail_clientSide(email) {
+                    if (!email) {
+                        displayErrorForField('bookingEmail', 'L\'adresse email est requise.');
+                        return false;
+                    }
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailPattern.test(email)) {
+                        displayErrorForField('bookingEmail', 'Format d\'email invalide (ex: nom@example.com).');
+                        return false;
+                    }
+                    clearErrorForField('bookingEmail');
+                    return true;
+                }
+
+                function validatePhone_clientSide(phone) {
+                    if (!phone) {
+                        displayErrorForField('bookingPhone', 'Le numéro de téléphone est requis.');
+                        return false;
+                    }
+                    const phonePattern = /^\+\d{9,15}$/;
+                    if (!phonePattern.test(phone)) {
+                        displayErrorForField('bookingPhone', 'Format invalide. Doit être international (ex: +41791234567).');
+                        return false;
+                    }
+                    clearErrorForField('bookingPhone');
+                    return true;
+                }
+
+                function validateName_clientSide(name) {
+                    if (!name || name.trim().length < 2) {
+                        displayErrorForField('bookingName', 'Le nom est requis (minimum 2 caractères).');
+                        return false;
+                    }
+                    clearErrorForField('bookingName');
+                    return true;
+                }
+
+                bookingForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    clearAllFormErrors();
+
+                    const name = nameInput.value.trim();
+                    const email = emailInput.value.trim();
+                    const phone = phoneInput.value.trim();
+                    const service = serviceInput.options[serviceInput.selectedIndex].text;
+                    const rawDate = dateInput.value;
+                    const rawTime = timeSelect.value;
+
+                    let isValidClientSide = true;
+                    if (!validateName_clientSide(name)) isValidClientSide = false;
+                    if (!validateEmail_clientSide(email)) isValidClientSide = false;
+                    if (!validatePhone_clientSide(phone)) isValidClientSide = false;
+
+                    if (!service) {
+                        displayErrorForField('bookingService', 'Veuillez sélectionner un service.');
+                        isValidClientSide = false;
+                    } else { clearErrorForField('bookingService'); }
+
+                    if (!rawDate) {
+                        displayErrorForField('bookingDate', 'Veuillez sélectionner une date.');
+                        isValidClientSide = false;
+                    } else { clearErrorForField('bookingDate'); }
+
+                    if (!rawTime) {
+                        displayErrorForField('bookingTime', 'Veuillez sélectionner un horaire.');
+                        isValidClientSide = false;
+                    } else { clearErrorForField('bookingTime'); }
+
+                    if (!isValidClientSide) {
+                        bookingStatusDiv.style.display = 'block';
+                        bookingStatusDiv.className = 'alert alert-warning mt-3';
+                        bookingStatusDiv.innerHTML = '<h4>Veuillez corriger les erreurs dans le formulaire.</h4>';
+                        return;
+                    }
+
+                    bookingForm.style.display = 'none';
+                    bookingStatusDiv.style.display = 'block';
+                    bookingStatusDiv.className = 'alert alert-info mt-3';
+                    bookingStatusDiv.innerHTML = `<h4>Traitement de votre réservation...</h4><p>Veuillez patienter.</p>`;
+
+                    submitBookingData(name, email, phone, service, rawDate, rawTime);
+                });
+
+                function submitBookingData(name, email, phone, service, rawDate, rawTime) {
+                    const apiUrl = 'http://localhost:8000/api/v1/book';
+                    const bookingData = {
+                        full_name: name, email: email, phone_number: phone,
+                        service_type: service, selected_date: rawDate, selected_time: rawTime
+                    };
+
+                    fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(bookingData)
+                    })
+                    .then(async response => {
+                        const responseData = await response.json().catch(() => ({ detail: "Réponse invalide ou non-JSON du serveur." }));
+                        if (!response.ok) {
+                            if (response.status === 422 && responseData.detail && Array.isArray(responseData.detail)) {
+                                responseData.detail.forEach(error => {
+                                    const fieldName = error.loc[error.loc.length - 1];
+                                    let feId = '';
+                                    if (fieldName === 'full_name') feId = 'bookingName';
+                                    else if (fieldName === 'email') feId = 'bookingEmail';
+                                    else if (fieldName === 'phone_number') feId = 'bookingPhone';
+                                    else if (fieldName === 'service_type') feId = 'bookingService';
+                                    else if (fieldName === 'selected_date') feId = 'bookingDate';
+                                    else if (fieldName === 'selected_time') feId = 'bookingTime';
+
+                                    if (feId) {
+                                        displayErrorForField(feId, error.msg);
+                                    } else {
+                                        console.warn("Erreur de validation backend non mappée:", error.loc, error.msg);
+                                        bookingStatusDiv.innerHTML += `<p class="text-danger">Erreur: ${error.msg}</p>`;
+                                    }
+                                });
+                                bookingStatusDiv.className = 'alert alert-warning mt-3';
+                                if (!bookingStatusDiv.querySelector('h4')) {
+                                    bookingStatusDiv.insertAdjacentHTML('afterbegin', '<h4>Veuillez corriger les erreurs indiquées.</h4>');
+                                }
+                            } else {
+                                const errorMsg = responseData.detail || responseData.message || `Erreur HTTP ${response.status}.`;
+                                bookingStatusDiv.className = 'alert alert-danger mt-3';
+                                bookingStatusDiv.innerHTML = `<h4>Erreur lors de la réservation</h4><p>${errorMsg}</p>`;
+                            }
+                            bookingForm.style.display = 'block';
+                            return null;
+                        }
+                        return responseData;
+                    })
+                    .then(data => {
+                        if (data === null) return;
+                        if (data.success && data.appointment_details) {
+                            const apptDetails = data.appointment_details;
+                            const appointmentDateTime = new Date(apptDetails.appointment_time_utc);
+                            const displayDateTime = appointmentDateTime.toLocaleTimeString('fr-FR', {
+                                weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
+                                hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Zurich'
+                            });
+
+                            bookingStatusDiv.className = 'alert alert-success mt-3';
+                            bookingStatusDiv.innerHTML = `
+                                <h4>Réservation Réussie!</h4>
+                                <p>Merci ${apptDetails.full_name}, votre rendez-vous pour "${apptDetails.service_type || 'le service demandé'}" est confirmé pour le ${displayDateTime}.</p>
+                                <p>Un email de confirmation sera envoyé à ${apptDetails.email}.</p>
+                                ${data.sms_reminder_scheduled ? '<p>Un rappel SMS sera également envoyé.</p>' : ''}`;
+                            bookingForm.reset();
+                        } else {
+                            bookingStatusDiv.className = 'alert alert-danger mt-3';
+                            bookingStatusDiv.innerHTML = `<h4>Erreur de Confirmation</h4><p>${data.message || 'La réponse du serveur est inattendue. Veuillez réessayer.'}</p>`;
+                            bookingForm.style.display = 'block';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Erreur grave lors de la soumission:', error);
+                        bookingStatusDiv.className = 'alert alert-danger mt-3';
+                        bookingStatusDiv.innerHTML = `<h4>Impossible de joindre le serveur</h4><p>Veuillez vérifier votre connexion internet et réessayer. Si le problème persiste, contactez-nous. (${error.message})</p>`;
+                        bookingForm.style.display = 'block';
+                    });
+                }
+
+                phoneInput.addEventListener('blur', function() {
+                    let value = this.value.trim().replace(/\s+/g, '');
+                    if (value && !value.startsWith('+')) {
+                        if (value.startsWith('0041')) {
+                             value = '+' + value.substring(2);
+                        } else if (value.startsWith('0')) {
+                            value = '+41' + value.substring(1);
+                        }
+                    }
+                    this.value = value;
+                    validatePhone_clientSide(this.value);
+                });
+                emailInput.addEventListener('blur', function() {
+                    validateEmail_clientSide(this.value.trim());
+                });
+                nameInput.addEventListener('blur', function() {
+                    validateName_clientSide(this.value.trim());
+                });
+
+            });
+        </script>
+    </body>
+</html>
